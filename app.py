@@ -17,14 +17,10 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 server = Flask(__name__)
 
-@server.route('/')
-def index():
-    return 'Hello Flask app'
-
 dash_app = dash.Dash(
     __name__,
     server=server,
-    routes_pathname_prefix='/dash/'
+    routes_pathname_prefix='/'
 )
 
 dash_app.layout = html.Div([

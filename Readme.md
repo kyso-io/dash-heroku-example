@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ### Development
 
 ```
-python app.py
+heroku run local
 ```
 
 ## Deploying
